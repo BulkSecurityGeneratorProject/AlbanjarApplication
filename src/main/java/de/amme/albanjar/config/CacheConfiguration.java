@@ -41,6 +41,11 @@ public class CacheConfiguration {
             cm.createCache(de.amme.albanjar.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(de.amme.albanjar.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(de.amme.albanjar.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(de.amme.albanjar.domain.AlbanjarCustomer.class.getName(), jcacheConfiguration);
+            cm.createCache(de.amme.albanjar.domain.AlbanjarCustomer.class.getName() + ".deliveries", jcacheConfiguration);
+            cm.createCache(de.amme.albanjar.domain.AlbanjarProduct.class.getName(), jcacheConfiguration);
+            cm.createCache(de.amme.albanjar.domain.AlbanjarProduct.class.getName() + ".deliveries", jcacheConfiguration);
+            cm.createCache(de.amme.albanjar.domain.AlbanjarDelivery.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
